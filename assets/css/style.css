@@ -1,8 +1,13 @@
 :root {
+    --blndo-bg: white;
     --blndo-header-bg: #ff6900;
     --blndo-text-light: #fff4ee;
-    --blndo-dark: #020004;
+    --blndo-text-dark: black;
     --blndo-footer-bg: #1A1A1A;
+    --blndo-sost_tag: #008000;
+    --blndo-sale-tag: #ff0000;
+    --blndo-text-soft-dark: #272626;
+    --blndo-text-highlight: #ff0b20;
 }
 
 
@@ -26,9 +31,7 @@
     justify-content: space-between;
 }
 
-.logo {
-    height: 45px
-}
+
 
 .bar_text {
     width: 200px;
@@ -38,7 +41,7 @@
 }
 
 .right_side {
-    flex-direction: column;
+
     justify-content: right;
 }
 
@@ -49,17 +52,74 @@ header {
     padding: 1rem 0;
     height: 80px;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 200;
 
-
+    .logo {
+        height: 45px
+    }
 }
 
 /* /header */
 
-/* main {
-    
-} */
+main * {
+    color: var(--blndo-text-dark);
+}
+
+main {
+    margin: 10rem 0;
+
+    .img {
+        position: relative;
+    }
+
+    .fav {
+        background-color: var(--blndo-bg);
+        padding: 0.5rem 1.5rem;
+        font-size: 48px;
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        right: -210px;
+    }
+
+    .tag {
+        position: absolute;
+        color: var(--blndo-text-light);
+        padding: 0.5rem 0.75rem;
+        z-index: 10;
+        bottom: 55px;
+    }
+
+    .sale {
+        background-color: var(--blndo-sale-tag);
+        left: 0px;
+
+    }
+
+    .sost {
+        background-color: var(--blndo-sost_tag);
+        left: 75px;
+    }
+
+    .price {
+        color: var(--blndo-text-highlight);
+    }
+
+    .og_price {
+        color: var(--blndo-text-soft-dark);
+        text-decoration: line-through;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .manufacturer {
+        font-weight: normal;
+        color: var(--blndo-text-soft-dark);
+        font-size: 16px;
+    }
+}
 
 /* /main */
 
@@ -86,6 +146,10 @@ footer {
 
     #legal {
         width: 420px;
+    }
+
+    #social {
+        flex-direction: column;
     }
 }
 
