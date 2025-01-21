@@ -31,8 +31,6 @@
     justify-content: space-between;
 }
 
-
-
 .bar_text {
     width: 200px;
     display: flex;
@@ -43,10 +41,6 @@
 .right_side {
 
     justify-content: right;
-}
-
-.weird_one {
-    height: 924px;
 }
 
 /* /utility */
@@ -70,6 +64,10 @@ header {
 main * {
     color: var(--blndo-text-dark);
 
+    .weird_one {
+        height: 924px;
+    }
+
     .alt_img {
         position: absolute;
         display: none;
@@ -80,10 +78,14 @@ main * {
     .img:hover .alt_img {
         display: block;
     }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
 }
 
 main {
-    margin: 10rem 0;
+    margin: 8rem 0;
 
     #pic_display_order {
         display: flex;
