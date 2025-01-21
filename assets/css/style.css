@@ -2,6 +2,7 @@
     --blndo-header-bg: #ff6900;
     --blndo-text-light: #fff4ee;
     --blndo-dark: #020004;
+    --blndo-footer-bg: #1A1A1A;
 }
 
 
@@ -9,6 +10,7 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--blndo-text-light);
+    font-size: 18px;
     font-weight: bold;
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     ;
@@ -16,11 +18,28 @@
 
 /*  utility */
 .align {
-    margin: 0 15%;
+    margin: 0 10%;
+}
+
+.site_bar {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     height: 45px
+}
+
+.bar_text {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right_side {
+    flex-direction: column;
+    justify-content: right;
 }
 
 /* /utility */
@@ -28,33 +47,46 @@
 header {
     background-color: var(--blndo-header-bg);
     padding: 1rem 0;
+    height: 80px;
     position: fixed;
     width: 100%;
     z-index: 200;
 
-    #main_bar {
-        display: flex;
-        justify-content: space-between;
 
-        #fit_type,
-        #head_icons {
-            width: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        #head_icons {
-            justify-content: right;
-        }
-    }
 }
 
 /* /header */
 
-main {}
+/* main {
+    
+} */
 
 /* /main */
-footer {}
+
+footer * {
+    font-weight: normal;
+    font-size: 15px;
+
+    h2 {
+        font-size: 21px;
+    }
+}
+
+footer {
+    background-color: var(--blndo-footer-bg);
+    padding: 1rem 0;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    #legal {
+        width: 420px;
+    }
+}
 
 /* /footer */
