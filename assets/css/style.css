@@ -45,6 +45,10 @@
     justify-content: right;
 }
 
+.weird_one {
+    height: 924px;
+}
+
 /* /utility */
 
 header {
@@ -70,38 +74,50 @@ main * {
 main {
     margin: 10rem 0;
 
+    #pic_display_order {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .img {
         position: relative;
+
+        .fav {
+            background-color: var(--blndo-bg);
+            padding: 0.5rem 1.5rem;
+            font-size: 48px;
+            position: absolute;
+            z-index: 10;
+            top: 15px;
+            right: 0px;
+        }
+
+        .tag {
+            position: absolute;
+            color: var(--blndo-text-light);
+            padding: 0.5rem 0.75rem;
+            z-index: 10;
+            bottom: 55px;
+        }
+
+        .sale {
+            background-color: var(--blndo-sale-tag);
+            left: 0px;
+
+        }
+
+        .sost {
+            background-color: var(--blndo-sost_tag);
+            left: 75px;
+        }
+
+        .fix4sost {
+            left: 0;
+        }
     }
 
-    .fav {
-        background-color: var(--blndo-bg);
-        padding: 0.5rem 1.5rem;
-        font-size: 48px;
-        position: absolute;
-        z-index: 10;
-        top: 15px;
-        right: -210px;
-    }
 
-    .tag {
-        position: absolute;
-        color: var(--blndo-text-light);
-        padding: 0.5rem 0.75rem;
-        z-index: 10;
-        bottom: 55px;
-    }
-
-    .sale {
-        background-color: var(--blndo-sale-tag);
-        left: 0px;
-
-    }
-
-    .sost {
-        background-color: var(--blndo-sost_tag);
-        left: 75px;
-    }
 
     .price {
         color: var(--blndo-text-highlight);
