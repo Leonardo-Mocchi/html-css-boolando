@@ -69,6 +69,17 @@ header {
 
 main * {
     color: var(--blndo-text-dark);
+
+    .alt_img {
+        position: absolute;
+        display: none;
+        z-index: 1;
+        top: 0;
+    }
+
+    .img:hover .alt_img {
+        display: block;
+    }
 }
 
 main {
